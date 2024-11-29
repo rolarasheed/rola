@@ -14,4 +14,4 @@ jobs:
       - name: "creating image"
         run: docker build -t rolarasheed/imagerola .
       - name: "pushing image"
-        run: docker push ${{ secrets.secret1 }}/imagerola     
+        run: docker push rolarasheed/imagerola     
