@@ -10,7 +10,7 @@ jobs:
     steps:     
       - uses: actions/checkout@v3   
       - name: "login to docker hub"
-        run: docker login --username ${{ secrets.secret1 }} --password ${{ secrets.secret2 }}
+        run: docker login --username ${{ secrets.secret3 }} --password ${{ secrets.secret2 }}
       - name: "creating image"
         run: docker build -t ${{ secrets.secret3 }}/imagerola2 .
       - name: "pushing image"
