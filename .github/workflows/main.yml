@@ -12,6 +12,6 @@ jobs:
       - name: "login to docker hub"
         run: docker login --username ${{ secrets.secret1 }} --password ${{ secrets.secret2 }}
       - name: "creating image"
-        run: docker build -t rolarasheed/imagerola .
+        run: docker build -t rolarasheed/imagerola2 .
       - name: "pushing image"
-        run: docker push rolarasheed/imagerola     
+        run: docker push rolarasheed/imagerola2     
